@@ -25,7 +25,8 @@ function App() {
           col: colIndex
         },
         player: activePlayer
-      }, ...prevTurns]
+      }, ...prevTurns
+    ]
       
       return updatedTurns
     });
@@ -43,7 +44,7 @@ function App() {
         />
       </div>
 
-      <Log />
+      <Log gameTurns={gameTurns}/>
     </main>
   )
 }
